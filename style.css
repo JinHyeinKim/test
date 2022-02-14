@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+@keyframes answer {
+	100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes rotate_image{ 
+    100% { transform: rotate(360deg); } 
+}
+
+html{
+     background: linear-gradient(to top, #8282EB, white);
+    background-attachment: fixed;
+}
+body{
+   
+    font-family: 'Jua', sans-serif;
+}
+h1{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+    
+    
+}
+h2{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.main{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+
+.kiwi{
+    width: 10%;
+    height: 10%;
+    margin-left: 5%;
+    float: left;
+   
+}
+.quiz-state{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.start{
+    width: 70%;
+    margin: 0 auto;
+    border: solid 5px black;
+    border-radius: 16px;
+    box-shadow: 0 0 6px 5px black;
+    cursor: pointer;
+    font-size: 3rem;
+    font-family: 'Jua', sans-serif;
+    color: #CD1F48;
+    display: block;
+        
+}
+.start:hover{
+    background: black;
+    
+}
+
+.started{
+    width: 100%;
+    
+    
+}
+.input-answer{
+    width: 100%;
+    border: solid 5px black;
+    border-radius: 16px;
+    box-shadow: 0 0 6px 5px black;
+    cursor: pointer;
+    font-size: 4rem;
+    font-family: 'Jua', sans-serif;
+    color: #CD1F48;
+}
+.timer{
+    font-size: 2rem;
+    float:left;
+    margin-top: 5px;
+    
+}
+.score{
+    float:right;
+    margin-top: 5px;
+    font-size: 2rem;
+}
+
+
+.ui::after {
+    content: '';
+    display: block;
+    clear: both;
+    border-top: dotted 2px rgba(255, 255, 255, .8);
+}
+
+.kiwi {
+    animation: rotate_image 6s linear infinite;transform-origin: 50% 50%;
+}
+
+.end-score{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.footnote {
+    font-size:1rem;
+    
+    padding-top: 20px;
+    border-top: dotted 2px rgba(255, 255, 255, .8);
+    text-align: right;
+}
+
+
+li {
+    padding: 10px;
+    margin: 0px 10px 3px 0;
+    display: block;
+    float: left;
+    border: solid 1px red;
+    background-color: rgba(255, 255, 255, .3);
+    transform: translateY(-40px);
+    animation: answer .5s ease-out forwards;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    
+      font-size: 8px;
+  }
+    
+    
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="main">
+            <h1>
+                오늘의 퀴즈
+            </h1>
+            <h2>
+                RealMaster에 대해 알아보자!
+            </h2>
+            <img class="kiwi" src="kiwi.png" />
+            <div class="quiz-state">
+                <button type="button" class="start">
+                    Start
+                </button>
+                <div class="started">
+                    <input type="text" class="input-answer" />
+                    <div class="ui">
+                        <div class="timer">남은 시간: <span class="timer-remaining"></span></div>
+                        <div class="score">
+                            정답: <span class="current-score">0</span>/<span class="total"></span>
+                        </div>
+                    </div>
+                    <ul class="answers-score"></ul>
+                </div>
+                <div class="end">
+                    <div class="end-score">당신은 나를 <span id="score"></span>% 알고있습니다.</div>
+                    
+                </div>
+                <div class="footnote">
+                    Thanks for playing!
+                    <a href="#" class="reset">Play again</a>?
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
